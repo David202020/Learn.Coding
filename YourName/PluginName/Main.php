@@ -10,6 +10,7 @@ class Main extends PluginBase implements Listener{
 
     public function onEnable(){
         $this->registerConfig();
+        $this->registerEvents();
         $this->getLogger()->info("§aEnabled.");
     }
 
@@ -17,6 +18,11 @@ class Main extends PluginBase implements Listener{
                     /////////////////////////////// CONFIG ///////////////////////////////
         @mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
+    }
+    
+    private function registerEvents(){
+                    /////////////////////////////// EVENTS ///////////////////////////////
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
     }
     
     public function onDisable(){
