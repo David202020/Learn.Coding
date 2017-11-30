@@ -2,11 +2,11 @@ Ask me any question [here](https://github.com/xXNiceAssasinl0/Learn.Coding/issue
 
 # Features
 
-- [x] Basics.
-- [ ] Configs.
-- [ ] Events.
-- [ ] Commands.
-- [ ] Tasks.
+- [x] [Basics.](https://github.com/xXNiceAssasinl0/Learn.Coding)
+- [ ] [Configs.](https://github.com/xXNiceAssasinl0/Learn.Coding/tree/Config)
+- [ ] [Events.]
+- [ ] [Commands.]
+- [ ] [Tasks.]
  
  # Developer:
  
