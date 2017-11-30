@@ -28,6 +28,6 @@ class EventListener implements Listener{
         $player = $event->getPlayer();
         $name = $player->getName();
         $event->setJoinMessage("");
-        $this->getMain()->getServer()->broadcastMessage("§a$name §bJoin");
+        $this->getMain()->getServer()->broadcastMessage("§a$name Join");
     }
 }
