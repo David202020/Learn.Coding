@@ -3,3 +3,8 @@ author: YourName
 version: 1.0.0
 api: 3.0.0-ALPHA9
 main: YourName\PluginName\Main
+
+permissions:
+test.command:
+ default: true
+ description: "Test Command Permission"
