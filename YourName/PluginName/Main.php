@@ -11,6 +11,7 @@ class Main extends PluginBase implements Listener{
     public function onEnable(){
         $this->registerConfig();
         $this->registerEvents();
+        $this->registerCommands();
         $this->getLogger()->info("§aEnabled.");
     }
 
@@ -24,7 +25,12 @@ class Main extends PluginBase implements Listener{
                     /////////////////////////////// EVENTS ///////////////////////////////
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
     }
-    
+  
+    private function registerCommands(){
+                    /////////////////////////////// COMMANDS ///////////////////////////////
+        $this->getServer()->getCommandMap()->register("test", new Commands\test());
+    }
+   
     public function onDisable(){
         $this->getLogger()->info("§cDisabled.");
     } 
