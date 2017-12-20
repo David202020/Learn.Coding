@@ -1,12 +1,12 @@
 <?php
 
-namespace YourName\PluginName\Commands;
+namespace David202020\WF\Commands;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use YourName\PluginName\Main;
 
-class test extends Command{
+class Main extends Command{
 	
 	public function __construct(){
         parent::__construct("test");
